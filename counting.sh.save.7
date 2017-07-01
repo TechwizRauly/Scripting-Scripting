@@ -1,0 +1,24 @@
+echo "what is your name?"
+read myName
+
+if [[ $myName =~ ^[A-Za-z_]+$ ]]; then
+echo "Hello $myName"
+
+else
+echo "Thats not a name"
+echo "What is your name?"
+read myName
+fi
+
+while [[ $myName ="" ]]; then
+	echo
+
+echo "How old are you?"
+read myNum
+echo  "Thats a nice number"
+
+if [[ $digit =~ [0-9] ]]; then
+	echo "$digit is a digit"
+else
+	echo "oops"
+fi
